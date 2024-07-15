@@ -62,7 +62,7 @@ function App() {
   return (
   <>
   <GlobalStyle />
-    <div className="App">
+    <Wrapper>
       <h1>REACT QUIZ</h1>
       {gameOver || userAnswers.length === Total_Questions ?(
         <button className='start' onClick={startTrivia}>
@@ -83,7 +83,7 @@ function App() {
         <button className='next' onClick={NextQuestion}>
           Next Question
         </button>) : null }
-    </div>
+    </Wrapper>
     </>
   );
 }

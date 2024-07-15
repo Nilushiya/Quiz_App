@@ -9,7 +9,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-image: url(${BGImage});
+      background: 
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)),
+     url(${BGImage});
     background-size: cover;
     margin: 0;
     padding: 0 20px;
@@ -24,12 +26,12 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const Wrapper = styled.div`
+  padding-top: 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   > p {
-    color: #fff;
+    color: white  ;
   }
 
   .score {
